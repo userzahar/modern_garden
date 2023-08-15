@@ -1,4 +1,36 @@
-
-.colonka {
-    list-style: none;
+.selector-for-some-widget {
+    box-sizing: content-box;
 }
+
+li, ul, body, div {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+.gallery{
+    background-color:#DCC1AB;
+}
+
+
+.row>li{
+    width: 451px;
+    padding: 0;
+}
+.row>li:not(:last-child){
+   margin-right: 43px;
+}
+
+.col-sm-4>img:not(:last-child){
+    margin-bottom: 42px;
+}
+
+@media (min-width: 1460px){
+    .container {
+        max-width: 1440px;
+    }
+}
+
