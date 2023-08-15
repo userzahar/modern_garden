@@ -1,5 +1,8 @@
+body {
+    box-sizing: border-box;
+}
 .selector-for-some-widget {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 li, ul, body, div {
@@ -8,24 +11,31 @@ li, ul, body, div {
     margin: 0;
 }
 .container{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 .gallery{
     background-color:#DCC1AB;
 }
-
-
-.row>li{
-    width: 451px;
-    padding: 0;
-}
-.row>li:not(:last-child){
-   margin-right: 43px;
+.row {
+    margin: 0;
 }
 
 .col-sm-4>img:not(:last-child){
     margin-bottom: 42px;
+}
+
+.order-1{
+    padding-left: 0;
+    padding-right: 29px;
+}
+.order-2{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.order-3{
+    padding-right: 0;
+    padding-left: 29px;
 }
 
 @media (min-width: 1460px){
