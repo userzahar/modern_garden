@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
@@ -12,18 +15,29 @@
     <header class="container header">
         <div class="row header-section">
             <div class="col-sm-7 logo">
-                <a href="/index.html">giard<span>design</span></a>
+                <a href="/index.html">
+                    <img src="./images/giarddesign.png" width="114" height="19" alt="logo giarddesign"/>
+                </a>
             </div>
-            <div class="col-sm-5 row">
-                <div class="col-sm-2"><a href="/">Oferta</a></div>
-                <nav class="col-sm-8">
-                    <ul class="navigation">
-                        <li class="col-sm-3"><a href="/">O firmie</a></li>
-                        <li class="col-sm-3"><a href="/">Realizacje</a></li>
-                        <li class="col-sm-3"><a href="/">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <div class="col-sm-2"><a href="/">Лупа</a></div>
+            <div class="col-sm-1">
+                    <button class="header-littleMenu">
+                        <p class="header-button">Oferta</p>
+                        <svg width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-OfertaMenu"></use>
+                        </svg>
+                    </button>
+            </div>
+
+            <div class="col-sm-1"><a href="/" class="header-button">O firmie</a></div>
+            <div class="col-sm-1"><a href="/" class="header-button">Realizacje</a></div>
+            <div class="col-sm-1"><a href="/" class="header-button">Kontakt</a></div>
+
+            <div class="col-sm-1">
+                    <button class="header-search header-button">
+                        <svg width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-search"></use>
+                        </svg>
+                    </button>
             </div>
         </div>
     </header>
@@ -50,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
         </section>
         <section class="Offer">
             <div>
@@ -131,8 +145,30 @@
                 </div>    
             </div>
         </section>
-
     </main>
+    <footer>
+        <div class="row">
+            <img src="./images/giarddesign.png" alt="logo giarddesign">
+            <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+            <a href="/index.html">Skontaktuj się z nami</a>
+        </div>
+        <div class="row">
+            <a href="">Kontakt</a>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">LinkedIn</a>
+            <a href="">000-000-000</a>
+            <a href="">giarddesign@kontakt.pl</a>
+        </div>
+        <div class="row">
+            <p>Prawa zastrzeżone © 2022</p>
+            <p>made by</p>
+            <svg>
+                <use href="./images/symbol-defs.svg#icon-Group"></use>
+            </svg>
+            <p><span>ad</span>Respect</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
