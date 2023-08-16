@@ -38,6 +38,9 @@ a {
 header {
     background-color: var(--white);
 }
+.header-container {
+    padding-left: 89px;
+}
 .header-section{
     font-size: 14px;
     letter-spacing: -0.14px;
@@ -87,7 +90,7 @@ header {
     margin-bottom: 44px;
 }
 .hero-text{
-    width: 441px;
+    max-width: 441px;
     margin-bottom: 72px;
 }
 .hero-buttonContainer {
@@ -143,6 +146,82 @@ margin-left: 8px;
     width: 100%;
     border:none;
 }
+
+/* offer section */
+
+.offer {
+    padding-top: 120px;
+    padding-bottom: 160px;
+    background-color: var(--grey);
+}
+
+.offer-info {
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-infoThumb {
+    max-width: 1040px;
+}
+
+.offer-hook {
+    color: var(--green);
+    font-size: 12px;
+    letter-spacing: -0.12px;
+    margin-bottom: 16px;
+}
+.offer-header {
+    color: var(--black);
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 115%;
+    margin-bottom: 32px;
+}
+
+.offer-text {
+    max-width: 709px;
+    
+}
+
+.offer-card {
+    max-width: 378px;
+    padding: 48px 40px;
+    background-color: var(--white);
+    border-radius: 28px;
+}
+
+.offer-cardImage {
+    margin-bottom: 32px;
+}
+.offer-cardHeader {
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: -1.4px;
+    margin-bottom: 12px;
+}
+
+.offer-cardText {
+    font-size: 14px;
+    line-height: 150%; 
+    letter-spacing: -0.14px;
+    margin-bottom: 63px;
+}
+
+.offer-cardLink {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    color: var(--green);
+    border-bottom: 1px solid var(--green);
+}
+.offer-cardLink>svg {
+    margin-left: 10px;
+}
+
 
 .gallery{
     background-color:#DCC1AB;

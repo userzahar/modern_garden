@@ -14,32 +14,35 @@
 <body>
     <header>
         <section>
-            <div class="row container header-section">
-                <div class="col-sm-7 header-logo">
-                    <a href="/index.html">
-                        <img src="./images/giarddesign.png" width="114" height="19" alt="logo giarddesign"/>
-                    </a>
-                </div>
-                <div class="col-sm-1">
-                        <button type="button" class="header-littleMenu">
-                            <p class="header-button">Oferta</p>
-                            <svg width="12" height="12">
-                                <use href="./images/symbol-defs.svg#icon-OfertaMenu"></use>
-                            </svg>
-                        </button>
-                </div>
-    
-                <div class="col-sm-1"><a href="/" class="header-button">O firmie</a></div>
-                <div class="col-sm-1"><a href="/" class="header-button">Realizacje</a></div>
-                <div class="col-sm-1"><a href="/" class="header-button">Kontakt</a></div>
-    
-                <div class="col-sm-1">
-                        <button type="button" class="header-search header-button">
-                            <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#icon-search"></use>
-                            </svg>
-                        </button>
-                </div>
+            <div class="container header-container">
+                <div class="row header-section">
+
+                        <div class="col-sm-7 header-logo">
+                            <a href="/index.html">
+                                <img src="./images/giarddesign.png" width="114" height="19" alt="logo giarddesign"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-1">
+                                <button type="button" class="header-littleMenu">
+                                    <p class="header-button">Oferta</p>
+                                    <svg width="12" height="12">
+                                        <use href="./images/symbol-defs.svg#icon-OfertaMenu"></use>
+                                    </svg>
+                                </button>
+                        </div>
+            
+                        <div class="col-sm-1"><a href="/" class="header-button">O firmie</a></div>
+                        <div class="col-sm-1"><a href="/" class="header-button">Realizacje</a></div>
+                        <div class="col-sm-1"><a href="/" class="header-button">Kontakt</a></div>
+            
+                        <div class="col-sm-1">
+                                <button type="button" class="header-search header-button">
+                                    <svg width="24" height="24">
+                                        <use href="./images/symbol-defs.svg#icon-search"></use>
+                                    </svg>
+                                </button>
+                        </div>
+                    </div>
             </div>
         </section>
     </header>
@@ -77,40 +80,57 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
         </section>
-        <section class="Offer">
-            <div>
-                <p>Oferta</p>
-                <h2>Działamy kompleksowo</h2>
-                <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+        <section class="offer">
+            <div class="container">
+                <div class="offer-info">
+                    <div class="offer-infoThumb">
+                        <p class="offer-hook">Oferta</p>
+                        <h2 class="offer-header">Działamy kompleksowo</h2>
+                        <p class="offer-text">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+                    </div>
+                </div>
+                <ul class="row justify-content-lg-between">
+                    <li class="col-sm-4 offer-card">
+                        <img src="./images/pencil.png" class="offer-cardImage" width="44" height="44" alt=""/>
+                        <h4 class="offer-cardHeader">Projekty</h4>
+                        <p class="offer-cardText">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                        <a href="" class="offer-cardLink">
+                            <p>Dowiedz się więcej</p>
+                        <svg  width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-VectorRight"></use>
+                        </svg></a>
+                    </li>
+                    <li class="col-sm-4  offer-card">
+                        <img src="./images/eye.png" class="offer-cardImage" width="44" height="44" alt=""/>
+                        <h4 class="offer-cardHeader">Wizualizacje</h4>
+                        <p class="offer-cardText">Przedstawimy Ci projekty koncepcyjne <br/>w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                        <a href="" class="offer-cardLink">
+                            <p>Dowiedz się więcej</p>
+                        <svg  width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-VectorRight"></use>
+                        </svg></a>
+                    </li>
+                    <li class="col-sm-4  offer-card">
+                        <img src="./images/star.png" class="offer-cardImage" width="44" height="44" alt=""/>
+                        <h4 class="offer-cardHeader">Realizacje</h4>
+                        <p class="offer-cardText">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                        <a href="/index.html" class="offer-cardLink">
+                            <p>Zobacz nasze realizacje</p>
+                        <svg  width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-VectorRight"></use>
+                        </svg></a>
+                    </li>
+                </ul>
             </div>
-            <ul class="row">
-                <li class="col-sm-4">
-                    <svg width="48" height="44"><use></use></svg>
-                    <h4>Projekty</h4>
-                    <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
-                    <a href="">Dowiedz się więcej</a>
-                </li>
-                <li class="col-sm-4">
-                    <svg width="48" height="44"><use></use></svg>
-                    <h4>Wizualizacje</h4>
-                    <p>Przedstawimy Ci projekty koncepcyjne  w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-                    <a href="">Dowiedz się więcej</a>
-                </li>
-                <li class="col-sm-4">
-                    <svg width="48" height="44"><use></use></svg>
-                    <h4>Realizacje</h4>
-                    <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
-                    <a href="">Zobacz nasze realizacje</a>
-                </li>
-            </ul>
         </section>
         <section class="about-us">
             <div class="container">
-                <div class="row hero">
+                <div class="row">
                     <div class="col-sm-6 hero-slider">
-                        <img src="./images/PhotoSlider.png" alt=""/>
+                        <img src="./images/OFirmePhoto.png" alt=""/>
                     </div>
                     <div class="col-sm-6 hero-info">
                         <div>
