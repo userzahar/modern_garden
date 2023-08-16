@@ -30,7 +30,7 @@ a {
     text-decoration: none;
 }
 .container {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 /* header */
@@ -39,7 +39,6 @@ header {
     background-color: var(--white);
 }
 .header-section{
-    padding: 0 45px 0 89px;
     font-size: 14px;
     letter-spacing: -0.14px;
     align-items: center;
@@ -68,9 +67,6 @@ header {
 }
 
 /* hero */
-section {
-    margin: 0 auto;
-}
 
 .hero-info{
     padding: 0 64px 0 89px;
@@ -96,14 +92,11 @@ section {
 }
 .hero-buttonContainer {
     width: 493px;
-    display: flex;
 }
 
 .hero-contactBtn{
     height: 50px;
-    margin-right: 36px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,6 +141,7 @@ margin-left: 8px;
 }
 .hero-sliderBtn{
     width: 100%;
+    border:none;
 }
 
 .gallery{
@@ -174,9 +168,5 @@ margin-left: 8px;
     padding-left: 29px;
 }
 
-@media (min-width: 1460px){
-    .container {
-        max-width: 1440px;
-    }
-}
+
 

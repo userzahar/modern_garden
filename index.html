@@ -13,33 +13,35 @@
 </head>
 <body>
     <header>
-        <div class="row container header-section">
-            <div class="col-sm-7 header-logo">
-                <a href="/index.html">
-                    <img src="./images/giarddesign.png" width="114" height="19" alt="logo giarddesign"/>
-                </a>
+        <section>
+            <div class="row container header-section">
+                <div class="col-sm-7 header-logo">
+                    <a href="/index.html">
+                        <img src="./images/giarddesign.png" width="114" height="19" alt="logo giarddesign"/>
+                    </a>
+                </div>
+                <div class="col-sm-1">
+                        <button type="button" class="header-littleMenu">
+                            <p class="header-button">Oferta</p>
+                            <svg width="12" height="12">
+                                <use href="./images/symbol-defs.svg#icon-OfertaMenu"></use>
+                            </svg>
+                        </button>
+                </div>
+    
+                <div class="col-sm-1"><a href="/" class="header-button">O firmie</a></div>
+                <div class="col-sm-1"><a href="/" class="header-button">Realizacje</a></div>
+                <div class="col-sm-1"><a href="/" class="header-button">Kontakt</a></div>
+    
+                <div class="col-sm-1">
+                        <button type="button" class="header-search header-button">
+                            <svg width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                </div>
             </div>
-            <div class="col-sm-1">
-                    <button type="button" class="header-littleMenu">
-                        <p class="header-button">Oferta</p>
-                        <svg width="12" height="12">
-                            <use href="./images/symbol-defs.svg#icon-OfertaMenu"></use>
-                        </svg>
-                    </button>
-            </div>
-
-            <div class="col-sm-1"><a href="/" class="header-button">O firmie</a></div>
-            <div class="col-sm-1"><a href="/" class="header-button">Realizacje</a></div>
-            <div class="col-sm-1"><a href="/" class="header-button">Kontakt</a></div>
-
-            <div class="col-sm-1">
-                    <button type="button" class="header-search header-button">
-                        <svg width="24" height="24">
-                            <use href="./images/symbol-defs.svg#icon-search"></use>
-                        </svg>
-                    </button>
-            </div>
-        </div>
+        </section>
     </header>
     <main>
         <section class="hero">
@@ -51,9 +53,9 @@
                                 Twojego ogrodu </h1>
                             <p class="hero-text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                         </div>
-                        <div class="hero-buttonContainer">
-                            <a class="hero-contactBtn" href="/index.html">Skontaktuj się z nami</a>
-                            <a class="hero-projectsBtn" href="/index.html"><p>Zobacz nasze realizacje</p>  
+                        <div class="row hero-buttonContainer">
+                            <a class="col-sm-5 hero-contactBtn" href="/index.html">Skontaktuj się z nami</a>
+                            <a class="col-sm-6 offset-1 hero-projectsBtn" href="/index.html"><p>Zobacz nasze realizacje</p>  
                             <svg width="16" height="16">
                                 <use href="./images/symbol-defs.svg#icon-VectorDown"></use>
                             </svg></a>
@@ -63,12 +65,12 @@
                         <img src="./images/PhotoSlider.png" alt=""/>
                         <div class="hero-sliderBtnContainer">
                             <button class="hero-sliderBtn" type="button">
-                                <svg width="48" height="48">
+                                <svg width="24" height="24">
                                     <use href="./images/symbol-defs.svg#icon-SliderArrowLeft"></use>
                                 </svg>
                             </button>
                             <button class="hero-sliderBtn" type="button">
-                                <svg width="48" height="48">
+                                <svg width="24" height="24">
                                     <use href="./images/symbol-defs.svg#icon-SliderArrowRight"></use>
                                 </svg>
                             </button>
