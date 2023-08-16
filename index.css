@@ -94,7 +94,7 @@ header {
     margin-bottom: 72px;
 }
 .hero-buttonContainer {
-    width: 493px;
+    max-width: 493px;
 }
 
 .hero-contactBtn{
@@ -181,7 +181,7 @@ margin-left: 8px;
 }
 
 .offer-text {
-    max-width: 709px;
+    max-width: 719px;
     
 }
 
