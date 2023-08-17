@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
@@ -19,7 +19,9 @@
 
                         <div class="col-xl-7 header-logo">
                             <a href="/index.html">
-                                <img src="./images/giarddesign.png" width="114" height="19" alt="logo giarddesign"/>
+                                <svg width="114" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-giarddesignWhite"></use>
+                                </svg>
                             </a>
                         </div>
                         <div class="col-xl-1">
@@ -58,7 +60,7 @@
                         </div>
                         <div class="row justify-content-xl-between hero-buttonContainer">
                             <a class="col-xl-5 hero-contactBtn" href="/index.html">Skontaktuj się z nami</a>
-                            <a class="col-xl-6 hero-projectsBtn" href="/index.html"><p>Zobacz nasze realizacje</p>  
+                            <a class="col-xl-6 offset-xl-1 hero-projectsBtn" href="/index.html"><p>Zobacz nasze realizacje</p>  
                                 <svg width="16" height="16">
                                     <use href="./images/symbol-defs.svg#icon-VectorDown"></use>
                                 </svg>
@@ -128,79 +130,100 @@
             </div>
         </section>
         <section class="about-us">
-            <div class="container">
-                <div class="row">
+            <div class="container oFirmie-container">
+                <div class="row oFirmie-row">
                     <div class="col-xl-6 hero-slider">
                         <img src="./images/OFirmePhoto.png" alt=""/>
                     </div>
-                    <div class="col-xl-6 hero-info">
+                    <div class="col-xl-6 oFirmie-info">
                         <div>
-                            <p>O firmie</p>
-                            <h2>Tworzymy z pasją</h2>
-                            <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                            <p  class="oFirmie-hook">O firmie</p>
+                            <h2 class="oFirmie-header">Tworzymy z pasją</h2>
+                            <p class="oFirmie-text">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
                         </div>
-                        <a href="/index.html">Poznaj nas bliżej</a>
+                        <a href="/index.html" class="oFirmie-btn">
+                            <p>Poznaj nas bliżej</p>
+                            <svg  width="16" height="16">
+                                <use href="./images/symbol-defs.svg#icon-VectorRightWhite"></use>
+                            </svg>
+                        </a>
                     </div>
 
                 </div>
             </div>
         </section>
-        <section class="Implementation">
+        <section class="gallery-section">
             <div class="container gallery">
                 <div>
-                    <p>Realizacje</p>
-                    <h2>Nasze projekty</h2>
+                    <p  class="offer-hook">Realizacje</p>
+                    <h2 class=" gallery-header">Nasze projekty</h2>
                 </div>
                 <ul class="row">
                     <li class="col-xl-4 order-1">
-                        <img src="./images//Photo-8.png" width="100%"  alt=""/>
-                        <img src="./images//Photo-5.png" width="100%"  alt=""/>
-                        <img src="./images//Photo-2.png" width="100%"  alt=""/>
+                        <img class="gallery-image" src="./images//Photo-8.png"   alt=""/>
+                        <img class="gallery-image" src="./images//Photo-5.png"   alt=""/>
+                        <img class="gallery-image" src="./images//Photo-2.png"   alt=""/>
                     </li>
                     <li class="col-xl-4 order-2">
-                        <img src="./images//Photo-7.png" width="100%"  alt=""/>
-                        <img src="./images//Photo-4.png" width="100%"  alt=""/>
-                        <img src="./images//Photo-1.png" width="100%"  alt=""/>
+                        <img class="gallery-image" src="./images//Photo-7.png"   alt=""/>
+                        <img class="gallery-image" src="./images//Photo-4.png"   alt=""/>
+                        <img class="gallery-image" src="./images//Photo-1.png"   alt=""/>
                     </li>
                     <li class="col-xl-4 order-3">
-                        <img src="./images//Photo-6.png" width="100%"   alt=""/>
-                        <img src="./images//Photo-3.png" width="100%"  alt=""/>
-                        <img src="./images//Photo.png" width="100%"  alt=""/>
+                        <img class="gallery-image" src="./images//Photo-6.png"    alt=""/>
+                        <img class="gallery-image" src="./images//Photo-3.png"   alt=""/>
+                        <img class="gallery-image" src="./images//Photo.png"   alt=""/>
                     </li>
                 </ul>
+                <div class="gallery-fog">
+                    <button class="gallery-button">
+                        <p>Rozwiń</p>
+                        <svg width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-VectorDown"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="instagram">
-            <div>
-                <h2>Zostańmy w kontakcie!  Znajdziesz nas na Instagramie.</h2>
+            <div class="instagram-container">
+                <h2 class="instagram-header">Zostańmy w kontakcie!<br/> Znajdziesz nas na <span>Instagramie.</span></h2>
                 <div>
-                    <p>Śledź nasze najnowsze realizacje!</p>
-                    <a href="/index.html">Instagram</a>
+                    <p class="instagram-text">Śledź nasze najnowsze realizacje!</p>
+                    <a href="/index.html" class="instagram-link">Instagram</a>
                 </div>    
-            </div>
+            </div >
         </section>
     </main>
-    <footer>
-        <div class="row">
-            <img src="./images/giarddesign.png" alt="logo giarddesign">
-            <p>Daj znać, co możemy dla Ciebie zrobić!</p>
-            <a href="/index.html">Skontaktuj się z nami</a>
-        </div>
-        <div class="row">
-            <a href="">Kontakt</a>
-            <a href="">Instagram</a>
-            <a href="">Facebook</a>
-            <a href="">LinkedIn</a>
-            <a href="">000-000-000</a>
-            <a href="">giarddesign@kontakt.pl</a>
-        </div>
-        <div class="row">
-            <p>Prawa zastrzeżone © 2022</p>
-            <p>made by</p>
-            <svg>
-                <use href="./images/symbol-defs.svg#icon-Group"></use>
-            </svg>
-            <p><span>ad</span>Respect</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-xl-baseline footer-upthumb">
+                <div class="col-xl-7">
+                    <svg width="114" height="19">
+                        <use href="./images/symbol-defs.svg#icon-giarddesignBlack"></use>
+                    </svg>
+                </div>
+                <p class="col-xl-3">Daj znać, co możemy dla Ciebie zrobić!</p>
+                <a href="/index.html" class="col-xl-2 hero-contactBtn">Skontaktuj się z nami</a>
+            </div>
+            <div class="row footer-linkThumb">
+                <a href="" class="col-xl-1">Kontakt</a>
+                <a href="" class="col-xl-1">Instagram</a>
+                <a href="" class="col-xl-1">Facebook</a>
+                <a href="" class="col-xl-5">LinkedIn</a>
+                <a href="" class="col-xl-2">000-000-000</a>
+                <a href="" class="col-xl-1">giarddesign@kontakt.pl</a>
+            </div>
+            <div class="row">
+                <p class="col-xl-10">Prawa zastrzeżone © 2022</p>
+                <div class="col-xl-2 footer-adRespect">
+                    <p>made by</p>
+                    <svg width="14" height="17">
+                        <use href="./images/symbol-defs.svg#icon-Group"></use>
+                    </svg>
+                    <p><span>ad</span>Respect</p>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
