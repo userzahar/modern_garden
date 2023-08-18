@@ -17,33 +17,65 @@
             <div class="container header-container">
                 <div class="row header-section">
 
-                        <div class="col-xl-7 header-logo">
+                        <div class=" col-9 col-md-3 header-logo">
                             <a href="/index.html">
                                 <svg width="114" height="19">
                                     <use href="./images/symbol-defs.svg#icon-giarddesignWhite"></use>
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-xl-1">
-                                <button type="button" class="header-littleMenu">
-                                    Oferta
-                                    <svg width="12" height="12">
-                                        <use href="./images/symbol-defs.svg#icon-OfertaMenu"></use>
-                                    </svg>
+
+                        <button class="btn col-2 d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <svg width="40" height="40">
+                                <use href="./images/symbol-defs.svg#menu-btn"></use>
+                            </svg> 
+                        </button>
+                          
+                          <div class="offcanvas offcanvas-start d-block d-md-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <div>
+                                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                              </div>
+                              <div class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                  Dropdown button
                                 </button>
-                        </div>
-            
-                        <div class="col-xl-1"><a href="/" class="header-button">O firmie</a></div>
-                        <div class="col-xl-1"><a href="/" class="header-button">Realizacje</a></div>
-                        <div class="col-xl-1"><a href="/" class="header-button">Kontakt</a></div>
-            
-                        <div class="col-xl-1">
-                                <button type="button" class="header-search header-button">
-                                    <svg width="24" height="24">
-                                        <use href="./images/symbol-defs.svg#icon-search"></use>
-                                    </svg>
-                                </button>
-                        </div>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-9 d-none d-md-block">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                            <button type="button" class="header-littleMenu">
+                                                Oferta
+                                                <svg width="12" height="12">
+                                                    <use href="./images/symbol-defs.svg#icon-OfertaMenu"></use>
+                                                </svg>
+                                            </button>
+                                    </div>
+                        
+                                    <div class="col-md-2"><a href="/" class="header-button">O firmie</a></div>
+                                    <div class="col-md-2"><a href="/" class="header-button">Realizacje</a></div>
+                                    <div class="col-md-2"><a href="/" class="header-button">Kontakt</a></div>
+                        
+                                    <div class="col-md-3">
+                                            <button type="button" class="header-search header-button">
+                                                <svg width="24" height="24">
+                                                    <use href="./images/symbol-defs.svg#icon-search"></use>
+                                                </svg>
+                                            </button>
+                                    </div>
+                                </div>
+                          </div>
                     </div>
             </div>
         </section>
