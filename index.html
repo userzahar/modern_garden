@@ -42,15 +42,15 @@
                                         Oferta
                                     </button>
                                     <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Projekty</a></li>
-                                    <li><a class="dropdown-item" href="#">Wizualizacje</a></li>
-                                    <li><a class="dropdown-item" href="#">Realizacje</a></li>
+                                    <li><a class="dropdown-item" href="#project">Projekty</a></li>
+                                    <li><a class="dropdown-item" href="#visualization">Wizualizacje</a></li>
+                                    <li><a class="dropdown-item" href="#realization">Realizacje</a></li>
                                     </ul>
                                 </div>
 
-                                <div ><a href="/" class="header-button">O firmie</a></div>
-                                <div ><a href="/" class="header-button">Realizacje</a></div>
-                                <div ><a href="/" class="header-button">Kontakt</a></div>
+                                <div ><a href="#aboutUs" class="header-button">O firmie</a></div>
+                                <div ><a href="#gallery" class="header-button">Realizacje</a></div>
+                                <div ><a href="#instagram" class="header-button">Kontakt</a></div>
 
                                 <div class="dropdown  ">
                                     <button type="button" class="header-search" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
@@ -61,7 +61,7 @@
                                     <form class="dropdown-menu p-3">
                                       <div class="mb-3">
                                         <label for="exampleDropdownFormEmail2" class="form-label">Szukaj</label>
-                                        <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Wpisz szukaj">
+                                        <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="Wpisz szukaj">
                                       </div>
                                       <button type="submit" class="btn btn-success">Szukaj</button>
                                     </form>
@@ -77,15 +77,15 @@
                                             Oferta
                                         </button>
                                         <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Projekty</a></li>
-                                        <li><a class="dropdown-item" href="#">Wizualizacje</a></li>
-                                        <li><a class="dropdown-item" href="#">Realizacje</a></li>
+                                        <li><a class="dropdown-item" href="#project">Projekty</a></li>
+                                        <li><a class="dropdown-item" href="#visualization">Wizualizacje</a></li>
+                                        <li><a class="dropdown-item" href="#realization">Realizacje</a></li>
                                         </ul>
                                     </div>
                         
-                                    <div class="col-md-3"><a href="/" class="header-button">O firmie</a></div>
-                                    <div class="col-md-3"><a href="/" class="header-button">Realizacje</a></div>
-                                    <div class="col-md-2"><a href="/" class="header-button">Kontakt</a></div>
+                                    <div class="col-md-3"><a href="#aboutUs" class="header-button">O firmie</a></div>
+                                    <div class="col-md-3"><a href="#gallery" class="header-button">Realizacje</a></div>
+                                    <div class="col-md-2"><a href="#instagram" class="header-button">Kontakt</a></div>
                         
                                     <div class="dropdown col-md-1 ">
                                         <button type="button" class="header-search" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
@@ -118,8 +118,8 @@
                             <p class="hero-text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                         </div>
                         <div class="row justify-content-xl-between hero-buttonContainer">
-                            <a class="col-xl-5 hero-contactBtn" href="/index.html">Skontaktuj się z nami</a>
-                            <a class="col-xl-6 offset-xl-1 hero-projectsBtn" href="/index.html"><p>Zobacz nasze realizacje</p>  
+                            <a class="col-xl-5 hero-contactBtn" href="#instagram">Skontaktuj się z nami</a>
+                            <a class="col-xl-6 offset-xl-1 hero-projectsBtn" href="#gallery"><p>Zobacz nasze realizacje</p>  
                                 <svg width="16" height="16">
                                     <use href="./images/symbol-defs.svg#icon-VectorDown"></use>
                                 </svg>
@@ -182,7 +182,7 @@
                     </div>
                 </div>
                 <ul class="row justify-content-xl-between">
-                    <li class="col-xl-4 offer-card">
+                    <li class="col-xl-4 offer-card" id="project">
                         <img src="./images/pencil.png" class="offer-cardImage" width="44" height="44" alt=""/>
                         <h4 class="offer-cardHeader">Projekty</h4>
                         <p class="offer-cardText">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
@@ -192,7 +192,7 @@
                             <use href="./images/symbol-defs.svg#icon-VectorRight"></use>
                         </svg></a>
                     </li>
-                    <li class="col-xl-4  offer-card">
+                    <li class="col-xl-4  offer-card" id="visualization">
                         <img src="./images/eye.png" class="offer-cardImage" width="44" height="44" alt=""/>
                         <h4 class="offer-cardHeader">Wizualizacje</h4>
                         <p class="offer-cardText">Przedstawimy Ci projekty koncepcyjne <br/>w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
@@ -202,7 +202,7 @@
                             <use href="./images/symbol-defs.svg#icon-VectorRight"></use>
                         </svg></a>
                     </li>
-                    <li class="col-xl-4  offer-card">
+                    <li class="col-xl-4  offer-card" id="realization">
                         <img src="./images/star.png" class="offer-cardImage" width="44" height="44" alt=""/>
                         <h4 class="offer-cardHeader">Realizacje</h4>
                         <p class="offer-cardText">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
@@ -221,7 +221,7 @@
                     <div class="col-xl-6 hero-slider">
                         <img src="./images/OFirmePhoto.png" alt=""/>
                     </div>
-                    <div class="col-xl-6 oFirmie-info">
+                    <div class="col-xl-6 oFirmie-info" id="aboutUs">
                         <div>
                             <p  class="oFirmie-hook">O firmie</p>
                             <h2 class="oFirmie-header">Tworzymy z pasją</h2>
@@ -238,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery-section">
+        <section class="gallery-section" id="gallery">
             <div class="container gallery">
                 <div>
                     <p  class="offer-hook">Realizacje</p>
@@ -271,12 +271,12 @@
                 </div>
             </div>
         </section>
-        <section class="instagram">
+        <section class="instagram" id="instagram">
             <div class="instagram-container">
                 <h2 class="instagram-header">Zostańmy w kontakcie!<br/> Znajdziesz nas na <span>Instagramie.</span></h2>
                 <div>
                     <p class="instagram-text">Śledź nasze najnowsze realizacje!</p>
-                    <a href="/index.html" class="instagram-link">Instagram</a>
+                    <a href="https://www.instagram.com/adrespect/" class="instagram-link" rel="noreferrer noopener">Instagram</a>
                 </div>    
             </div >
         </section>
@@ -293,12 +293,12 @@
                 <a href="/index.html" class="col-xl-2 hero-contactBtn">Skontaktuj się z nami</a>
             </div>
             <div class="row footer-linkThumb">
-                <a href="" class="col-xl-1">Kontakt</a>
-                <a href="" class="col-xl-1">Instagram</a>
-                <a href="" class="col-xl-1">Facebook</a>
-                <a href="" class="col-xl-5">LinkedIn</a>
-                <a href="" class="col-xl-2">000-000-000</a>
-                <a href="" class="col-xl-1">giarddesign@kontakt.pl</a>
+                <a href="https://adrespect.pl/kontakt/#dzial" class="col-xl-1" rel="noreferrer noopener">Kontakt</a>
+                <a href="https://www.instagram.com/adrespect/" class="col-xl-1" rel="noreferrer noopener">Instagram</a>
+                <a href="https://www.facebook.com/adrespectagency/" class="col-xl-1" rel="noreferrer noopener">Facebook</a>
+                <a href="https://www.linkedin.com/company/adrespect/" class="col-xl-5" rel="noreferrer noopener">LinkedIn</a>
+                <a href="tel:000000000" class="col-xl-2" rel="noreferrer noopener">000-000-000</a>
+                <a href="mailto:giarddesign@kontakt.pl" class="col-xl-1" rel="noreferrer noopener">giarddesign@kontakt.pl</a>
             </div>
             <div class="row">
                 <p class="col-xl-10">Prawa zastrzeżone © 2022</p>
@@ -312,6 +312,7 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
