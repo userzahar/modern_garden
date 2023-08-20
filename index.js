@@ -11,13 +11,13 @@ function chekBackdrop  () {
         event.preventDefault();
         scrollPosition = window.scrollY;
         setTimeout( function scroll() {
-            window.scrollTo(0, scrollPosition)},320)
+            window.scrollTo(0, scrollPosition)},250)
     } )
     document.querySelector('.btn-close').addEventListener('click', function (event) {
         event.preventDefault();
         scrollPosition = window.scrollY;
         setTimeout( function scroll() {
-            window.scrollTo(0, scrollPosition)},320)
+            window.scrollTo(0, scrollPosition)},305)
     });
 }
 

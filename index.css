@@ -4,6 +4,7 @@
     --grey: #F5F0EC;
     --white: #FFF;
     --beige: #DCC1AB;
+    --accent: #1d6737;
   }
 
 body {
@@ -60,9 +61,16 @@ header {
 
 .header-search {
     border: none;
-    padding:0;
+    border-radius: 8px;
+    height: 50px;
     background-color: inherit;
 }
+
+.header-search:hover{
+    fill: var(--grey);
+    background-color: var(--accent);
+}
+
 .header-littleMenu {
     width: 59px;
     padding: 0;
@@ -73,31 +81,56 @@ header {
 }
 .header-button {
     color: inherit;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    display: flex;
+    border-radius: 8px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-button:hover {
+    color: var(--grey);
+    background-color: var(--accent);
 }
 
 /* hero */
 
 
 .hero-info{
-    padding: 0 64px 0 89px;
+    text-align: center;
+    padding: 34px 15px 34px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     background-color: var(--beige);
+    @media screen and (min-width:1200px) {
+        text-align: start;
+        padding: 0px 64px 0 89px;
+    }
 }
+
+.hero-thumb {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-header{
     color: var(--black);
     font-family: 'Montserrat';
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 500;
     line-height: 70px;
     max-width: 550px;
     margin-bottom: 44px;
+    @media screen and (min-width:1200px) {
+        font-size: 60px;
+    }
 }
+
 .hero-text{
     max-width: 441px;
     margin-bottom: 72px;
@@ -106,42 +139,75 @@ header {
     width:102%;
 }
 
-.hero-contactBtn{
+.hero-contactBtn {
+    max-width: 250px;
     height: 50px;
     padding: 0;
+    margin-bottom: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--green);
     color: var(--grey);
     border-radius: 200px;
+    @media screen and (min-width:1200px) {
+
+        margin-bottom: 0;
+     }
+}
+.hero-contactBtn:hover {
+    background-color: var(--accent);
 }
 
+
+
+
 .hero-projectsBtn{
+    max-width: 250px;
     height: 50px;
     padding-left: 22px;
     padding-right: 18px;
+    border-radius: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: inherit;
+    fill: var(--green);
+    background: linear-gradient(to right, var(--green) 50%, var(--beige) 50%);
     border: 1px solid var(--green);
-    border-radius: 200px;
-    color: var(--green);
+    color: var(--black);
+    transition: background-position .5s, color .5s, fill .5s;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    @media screen and (min-width:1200px) {
+       width: 100%;
+    }
+    /* lolololo */
 }
+
+.hero-projectsBtn:hover {
+    color: var(--grey);
+    fill: var(--grey);
+    background-position: left bottom;
+}
+
 .hero-projectsBtn>svg{
 margin-left: 8px;
 }
 
 
 .hero-slider{
-    object-fit: fill;
+    background-color: var(--beige);
     padding: 0;
-    position: relative;
+    height: 300px;
 }
 .hero-slider>img{
     height: 100%;
      width: 100%;
+}
+.carousel-inner {
+    position: relative;
+    object-fit: fill;
+    height: 100%;
 }
 
 .hero-sliderBtnContainer{
@@ -155,14 +221,25 @@ margin-left: 8px;
 }
 .hero-sliderBtn{
     border:none;
+    transition: scale 0.1s ease-in-out;
+}
+
+.hero-sliderBtn:hover {
+    transform: scale(0.95);
+}
+.hero-sliderBtn:active {
+    background-color: var(--beige);
 }
 
 /* offer section */
 
 .offer {
-    padding-top: 120px;
-    padding-bottom: 160px;
+    padding-top: 60px;
+    padding-bottom: 80px;
     background-color: var(--grey);
+    @media screen and (min-width:1200px) {
+        padding-top: 120px;
+     }
 }
 
 .offer-info {
@@ -173,6 +250,10 @@ margin-left: 8px;
 }
 .offer-infoThumb {
     max-width: 1040px;
+    padding: 0 15px 0 15px;
+    @media screen and (min-width:1200px) {
+        padding: 0;
+     }
 }
 
 .offer-hook {
@@ -198,8 +279,17 @@ margin-left: 8px;
 .offer-card {
     max-width: 378px;
     padding: 48px 40px;
+    margin-bottom: 30px;
     background-color: var(--white);
     border-radius: 28px;
+    transition: scale 0.1s ease-in-out;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+     }
+}
+
+.offer-card:hover {
+    transform: scale(1.1);
 }
 
 .offer-cardImage {
@@ -228,6 +318,16 @@ margin-left: 8px;
     color: var(--green);
     border-bottom: 1px solid var(--green);
 }
+
+.offer-cardLink:hover {
+    color: var(--black);
+    border-bottom-color: var(--black);
+}
+
+.offer-cardLink:hover>svg {
+    transform: translateX(5px);
+}
+
 .offer-cardLink>svg {
     margin-left: 10px;
 }
@@ -249,12 +349,15 @@ margin-left: 8px;
 }
 
 .oFirmie-info {
-    padding: 0 64px 0 89px;
+    padding: 60px 15px 80px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     background-color: var(--green);
+    @media screen and (min-width:1200px) {
+        padding: 0 64px 0 89px;
+     }
 }
 
 .oFirmie-header {
@@ -282,6 +385,14 @@ margin-left: 8px;
     color: var(--grey);
 }
 
+.oFirmie-btn:hover {
+    background-color: var(--accent);
+}
+
+.oFirmie-btn:hover>svg {
+    transform: translateX(5px);
+}
+
 .oFirmie-btn>svg{
     margin-left: 8px;
     fill: var(--grey);
@@ -290,8 +401,12 @@ margin-left: 8px;
 /* Implementation section */
 
 .gallery-section {
-    padding-top: 120px;
+    
+    padding-top: 300px;
     background-color:#DCC1AB;
+    @media screen and (min-width:1200px) {
+        padding-top: 120px;
+    }
 }
 
 .gallery-header {
@@ -300,10 +415,17 @@ margin-left: 8px;
     font-size: 48px;
     font-weight: 500;
     line-height: 115%;
-    margin-bottom: 96px;
+    margin-bottom: 48px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 96px;
+    }
 }
 .gallery {
    position: relative;
+   padding: 0 15px;
+   @media screen and (min-width:1200px) {
+    padding: 0 0;
+}
    
 }
 .gallery-fog {
@@ -315,7 +437,7 @@ margin-left: 8px;
 }
 
 .gallery-fog.isOpen{
-    background:none;
+    background: none;
 }
 
 .gallery-button {
@@ -333,6 +455,10 @@ margin-left: 8px;
     color: var(--black);
 }
 
+.gallery-button:hover {
+    transform: scale(1.1);
+}
+
 .gallery-button.hide{
         visibility: hidden;
         position: absolute;
@@ -343,12 +469,21 @@ margin-left: 8px;
     margin-left: 8px;
     fill: var(--black);
 }
+.button-collapse {
+     background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+}
+
 .button-collapse>svg {
     transform: rotate(180deg);
 }
 
 .gallery-image {
     width: 100%;
+    margin-bottom: 8px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0px;
+     }
+    
 }
 
 .gallery-container {
@@ -372,23 +507,36 @@ margin-left: 8px;
 
 .instagram-container {
     max-width: 1040px;
-    height: 358px;
-    padding: 0 97px 0 97px;
+    height: 100%;
+    padding: 60px 15px 60px 15px;
     background-color: var(--green);
     color: var(--grey);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: normal;
+    @media screen and (min-width:1200px) {
+        padding: 0 97px 0 97px;
+        height: 358px;
+        flex-direction: row;
+        align-items: center;
+     }
 }
 
 .instagram-header {
     width: 100%;
     font-family: 'Montserrat';
-    font-size: 40px;
+    font-size: 32px;
+    
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -2px;
     margin-right: 64px;
+    margin-bottom: 16px;
     color: var(--grey);
+    @media screen and (min-width:1200px) {
+        font-size: 40px;
+        margin-bottom: 0;
+     }
 }
 .instagram-header>span {
     font-family: 'Montserrat';
@@ -412,22 +560,63 @@ margin-left: 8px;
     color: var(--green);
     border-radius: 200px;
 }
+.instagram-link:hover {
+    transform: scale(1.1);
+    background-color: var(--white);
+}
 
 /* footer */
 
 .footer {
-    padding: 80px 0 80px 0;
+    padding: 60px 0 60px 0;
     background-color: var(--black);
     color: var(--grey);
+    @media screen and (min-width:1200px) {
+        padding: 80px 0 80px 0;
+     }
 }
 
 .footer-upthumb {
-    height: 112px;
+    
     border-bottom: 1px solid var(--grey);
+    @media screen and (min-width:1200px) {
+        height: 112px;
+     }
 }
 
 .footer-linkThumb {
-    margin: 62px 0 120px 0;
+    margin: 30px 0 60px 0;
+    @media screen and (min-width:1200px) {
+        margin: 62px 0 120px 0;
+     }
+}
+
+.footer-link {
+     position: relative;     
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--green);
+    transition: width .3s;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-awake {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @media screen and (min-width:1200px) {
+        padding-top: 0;
+    padding-bottom: 0;
+     }
 }
 
 .footer-adRespect {
@@ -451,15 +640,20 @@ margin-left: 8px;
 .dropdown-toggle {
     height: 50px;
     background-color: var(--white);
+    border-radius: 8px;
     border:none;
     padding: 0 6px;
+}
 
+.dropdown-toggle:hover {
+    color: var(--grey);
+    background-color: var(--accent);
 }
 
 .dropdown-toggle.show {
     color: var(--grey);
     border-radius: 8px;
-    background-color: var(--green);
+    background-color: var(--accent);
 }
 
 
@@ -474,14 +668,26 @@ margin-left: 8px;
     margin-left: -1px;
 }
 
-.header-menu.dropdown {
-    width: 100%;
-    height: 100%;
+
+.dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dropdown-item:hover {
     color: var(--grey);
-    background-color: var(--green);
+    background-color: var(--accent);
+}
+
+.offcanvasCloseJs{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.offcanvasCloseJs:hover {
+    fill: var(--grey);
+    background-color: var(--accent);
 }
 
 
@@ -501,15 +707,25 @@ margin-left: 8px;
 
 .order-1{
     padding-left: 0;
-    padding-right: 29px;
+    padding-right: 0;
+    @media screen and (min-width:1200px) {
+        padding-right: 29px;
+    }
 }
 .order-2{
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    @media screen and (min-width:1200px) {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
 }
 .order-3{
     padding-right: 0;
-    padding-left: 29px;
+    padding-left: 0;
+    @media screen and (min-width:1200px) {
+        padding-left: 29px;
+    }
 }
 
 
