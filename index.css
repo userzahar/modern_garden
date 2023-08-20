@@ -314,10 +314,14 @@ margin-left: 8px;
     height: 50%;
 }
 
+.gallery-fog.isOpen{
+    background:none;
+}
+
 .gallery-button {
     position: absolute;
     bottom: 89.5px;
-    left:50%;
+    left:calc(50% - 60px);
     height: 50px;
     padding: 0 18px 0 22px;
     display: flex;
@@ -328,13 +332,32 @@ margin-left: 8px;
     border-radius: 200px;
     color: var(--black);
 }
+
+.gallery-button.hide{
+        visibility: hidden;
+        position: absolute;
+        pointer-events: none;
+}
+
 .gallery-button>svg {
     margin-left: 8px;
     fill: var(--black);
 }
+.button-collapse>svg {
+    transform: rotate(180deg);
+}
 
 .gallery-image {
     width: 100%;
+}
+
+.gallery-container {
+    height: 1519px;
+    overflow: hidden;
+}
+
+.gallery-container.isOpen {
+    height:100%
 }
 
 /* instagram section */

@@ -25,7 +25,7 @@
                             </a>
                         </div>
 
-                        <button class="btn col-2 d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <button class="btn col-2 d-block d-md-none offcanvasCloseJs" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             <svg width="40" height="40">
                                 <use href="./images/symbol-defs.svg#menu-btn"></use>
                             </svg> 
@@ -244,30 +244,47 @@
                     <p  class="offer-hook">Realizacje</p>
                     <h2 class=" gallery-header">Nasze projekty</h2>
                 </div>
-                <ul class="row">
-                    <li class="col-xl-4 order-1">
-                        <img class="gallery-image" src="./images//Photo-8.png"   alt=""/>
-                        <img class="gallery-image" src="./images//Photo-5.png"   alt=""/>
-                        <img class="gallery-image" src="./images//Photo-2.png"   alt=""/>
-                    </li>
-                    <li class="col-xl-4 order-2">
-                        <img class="gallery-image" src="./images//Photo-7.png"   alt=""/>
-                        <img class="gallery-image" src="./images//Photo-4.png"   alt=""/>
-                        <img class="gallery-image" src="./images//Photo-1.png"   alt=""/>
-                    </li>
-                    <li class="col-xl-4 order-3">
-                        <img class="gallery-image" src="./images//Photo-6.png"    alt=""/>
-                        <img class="gallery-image" src="./images//Photo-3.png"   alt=""/>
-                        <img class="gallery-image" src="./images//Photo.png"   alt=""/>
-                    </li>
-                </ul>
-                <div class="gallery-fog">
-                    <button class="gallery-button">
-                        Rozwiń
-                        <svg width="16" height="16">
-                            <use href="./images/symbol-defs.svg#icon-VectorDownBlack"></use>
-                        </svg>
-                    </button>
+                <div class="gallery-container">
+                    <ul class="row">
+                        <li class="col-xl-4 order-1">
+                            <img class="gallery-image" src="./images//Photo-8.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-5.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-2.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-7.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-4.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-1.png"   alt=""/>
+                        </li>
+                        <li class="col-xl-4 order-2">
+                            <img class="gallery-image" src="./images//Photo-7.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-4.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-1.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-6.png"    alt=""/>
+                            <img class="gallery-image" src="./images//Photo-3.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo.png"   alt=""/>
+                        </li>
+                        <li class="col-xl-4 order-3">
+                            <img class="gallery-image" src="./images//Photo-6.png"    alt=""/>
+                            <img class="gallery-image" src="./images//Photo-3.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-8.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-5.png"   alt=""/>
+                            <img class="gallery-image" src="./images//Photo-2.png"   alt=""/>
+                        </li>
+                    </ul>
+                    <div class="gallery-fog">
+                        <button class="gallery-button button-expand">
+                            Rozwiń
+                            <svg width="16" height="16">
+                                <use href="./images/symbol-defs.svg#icon-VectorDownBlack"></use>
+                            </svg>
+                        </button>
+                        <button class="gallery-button  button-collapse hide">
+                            Zwiń
+                            <svg width="16" height="16">
+                                <use href="./images/symbol-defs.svg#icon-VectorDownBlack"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
