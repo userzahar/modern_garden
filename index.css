@@ -98,7 +98,7 @@ header {
 
 .hero-info{
     text-align: center;
-    padding: 34px 15px 34px 15px;
+    padding: 34px 15px 52px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,23 +117,32 @@ header {
     align-items: center;
 }
 
-.hero-header{
+.hero-header {
     color: var(--black);
     font-family: 'Montserrat';
-    font-size: 50px;
+    font-size: 36px;
+    line-height: 50px;
     font-style: normal;
     font-weight: 500;
-    line-height: 70px;
     max-width: 550px;
     margin-bottom: 44px;
+    @media screen and (min-width:768px){
+        font-size: 47px;
+        line-height: 67px;
+    }
     @media screen and (min-width:1200px) {
         font-size: 60px;
+        line-height: 70px;
     }
 }
 
 .hero-text{
     max-width: 441px;
-    margin-bottom: 72px;
+    margin-bottom: 38px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 72px;
+    }
 }
 .hero-buttonContainer {
     width:102%;
@@ -142,8 +151,8 @@ header {
 .hero-contactBtn {
     max-width: 250px;
     height: 50px;
-    padding: 0;
     margin-bottom: 16px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +190,6 @@ header {
     @media screen and (min-width:1200px) {
        width: 100%;
     }
-    /* lolololo */
 }
 
 .hero-projectsBtn:hover {
@@ -199,10 +207,16 @@ margin-left: 8px;
     background-color: var(--beige);
     padding: 0;
     height: 300px;
+    @media screen and (min-width:576px) {
+        height: 440px;
+    }
+    @media screen and (min-width:768px) {
+        height: 636px;
+    }
 }
 .hero-slider>img{
     height: 100%;
-     width: 100%;
+     width: 100%;   
 }
 .carousel-inner {
     position: relative;
@@ -211,13 +225,22 @@ margin-left: 8px;
 }
 
 .hero-sliderBtnContainer{
-    width: 192px;
-    height: 96px;
+    width: 96px;
+    height: 48px;
     z-index: 1;
     position: absolute;
     display: flex;
     right: 0;
     bottom: 0;
+    @media screen and (min-width:576px) {      
+        width: 144px;
+        height: 72px;
+     }
+
+    @media screen and (min-width:768px) {
+        width: 192px;
+        height: 96px; 
+     }
 }
 .hero-sliderBtn{
     border:none;
@@ -266,7 +289,7 @@ margin-left: 8px;
 .offer-header {
     color: var(--black);
     font-family: 'Montserrat';
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 115%;
     margin-bottom: 32px;
@@ -277,13 +300,14 @@ margin-left: 8px;
 }
 
 .offer-card {
-    max-width: 378px;
+    max-width: 400px;
     padding: 48px 40px;
     margin-bottom: 30px;
     background-color: var(--white);
     border-radius: 28px;
     transition: scale 0.1s ease-in-out;
     @media screen and (min-width:1200px) {
+        max-width: 378px;
         margin-bottom: 0;
      }
 }
@@ -363,7 +387,7 @@ margin-left: 8px;
 .oFirmie-header {
     color: var(--grey);
     font-family: 'Montserrat';
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 115%;
     margin-bottom: 32px;
@@ -401,9 +425,18 @@ margin-left: 8px;
 /* Implementation section */
 
 .gallery-section {
-    
     padding-top: 300px;
     background-color:#DCC1AB;
+    @media screen and (min-width:400px) {
+        padding-top: 184px;
+    }
+    @media screen and (min-width:576px) {
+        padding-top: 290px;
+    }
+
+    @media screen and (min-width:768px){
+        padding-top: 460px;
+    }
     @media screen and (min-width:1200px) {
         padding-top: 120px;
     }
@@ -412,7 +445,7 @@ margin-left: 8px;
 .gallery-header {
     color: var(--black);
     font-family: 'Montserrat';
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 115%;
     margin-bottom: 48px;
@@ -480,7 +513,7 @@ margin-left: 8px;
 .gallery-image {
     width: 100%;
     margin-bottom: 8px;
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         margin-bottom: 0px;
      }
     
@@ -489,6 +522,10 @@ margin-left: 8px;
 .gallery-container {
     height: 1519px;
     overflow: hidden;
+
+    @media screen and (min-width:768px){
+        height: 760px;
+    }
 }
 
 .gallery-container.isOpen {
@@ -525,17 +562,20 @@ margin-left: 8px;
 .instagram-header {
     width: 100%;
     font-family: 'Montserrat';
-    font-size: 32px;
-    
+    font-size: 36px;
     font-weight: 400;
     line-height: 120%;
+    text-align: center;
     letter-spacing: -2px;
-    margin-right: 64px;
+    margin-right: 0;
     margin-bottom: 16px;
     color: var(--grey);
+
     @media screen and (min-width:1200px) {
         font-size: 40px;
+        text-align: start;
         margin-bottom: 0;
+        margin-right: 64px;
      }
 }
 .instagram-header>span {
@@ -545,13 +585,22 @@ margin-left: 8px;
     letter-spacing: 1px;
 }
 
+.instagram-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:1200px) {
+        display: block;
+     }
+}
+
 .instagram-text {
     margin-bottom: 24px;
 }
 
 .instagram-link {
     height: 50px;
-    max-width: 124px;
+    width: 124px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -577,7 +626,7 @@ margin-left: 8px;
 }
 
 .footer-upthumb {
-    
+    padding-bottom: 16px;
     border-bottom: 1px solid var(--grey);
     @media screen and (min-width:1200px) {
         height: 112px;
@@ -585,14 +634,16 @@ margin-left: 8px;
 }
 
 .footer-linkThumb {
-    margin: 30px 0 60px 0;
+    margin: 16px 0 60px 0;
     @media screen and (min-width:1200px) {
         margin: 62px 0 120px 0;
      }
 }
 
 .footer-link {
-     position: relative;     
+     position: relative;  
+     padding: 12px 0 12px 6px;
+
 }
 
 .footer-link::after {
