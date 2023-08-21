@@ -104,8 +104,12 @@ header {
     justify-content: center;
     align-items: flex-start;
     background-color: var(--beige);
+    @media screen and (min-width:768px) {
+        align-items: center
+    }
     @media screen and (min-width:1200px) {
         text-align: start;
+        align-items: flex-start;
         padding: 0px 64px 0 89px;
     }
 }
@@ -115,6 +119,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width:1200px) {
+        align-items: flex-start;
+    }
 }
 
 .hero-header {
@@ -145,7 +152,16 @@ header {
     }
 }
 .hero-buttonContainer {
-    width:102%;
+    width:100%;
+    @media screen and (min-width:768px) {
+        width:62%;
+    }
+    @media screen and (min-width:1200px) {
+        width:100%;
+    }
+    @media screen and (min-width:1400px) {
+        width:90%;
+    }
 }
 
 .hero-contactBtn {
@@ -183,7 +199,7 @@ header {
     fill: var(--green);
     background: linear-gradient(to right, var(--green) 50%, var(--beige) 50%);
     border: 1px solid var(--green);
-    color: var(--black);
+    color: var(--green);
     transition: background-position .5s, color .5s, fill .5s;
     background-size: 200% 100%;
     background-position: right bottom;
@@ -274,7 +290,11 @@ margin-left: 8px;
 .offer-infoThumb {
     max-width: 1040px;
     padding: 0 15px 0 15px;
+    @media screen and (min-width:768px) {
+        text-align: center;
+     }
     @media screen and (min-width:1200px) {
+        text-align: start;
         padding: 0;
      }
 }
@@ -293,6 +313,9 @@ margin-left: 8px;
     font-weight: 500;
     line-height: 115%;
     margin-bottom: 32px;
+    @media screen and (min-width:1200px) {
+        font-size: 48px;
+     }
 }
 
 .offer-text {
@@ -306,6 +329,9 @@ margin-left: 8px;
     background-color: var(--white);
     border-radius: 28px;
     transition: scale 0.1s ease-in-out;
+    @media screen and (min-width:768px) {
+        max-width: 700px;
+     }
     @media screen and (min-width:1200px) {
         max-width: 378px;
         margin-bottom: 0;
@@ -364,8 +390,16 @@ margin-left: 8px;
     letter-spacing: -0.12px;
     margin-bottom: 16px;
 }
-.oFirmie-container {
-    height: 720px;
+
+
+.oFirmie-thumb {
+    text-align: start;
+    @media screen and (min-width:768px) {
+        text-align: center;
+     }
+    @media screen and (min-width:1200px) {
+        text-align: start;
+     }
 }
 
 .oFirmie-row{
@@ -379,7 +413,11 @@ margin-left: 8px;
     justify-content: center;
     align-items: flex-start;
     background-color: var(--green);
+    @media screen and (min-width:768px) {
+        align-items: center;
+     }
     @media screen and (min-width:1200px) {
+        align-items: flex-start;
         padding: 0 64px 0 89px;
      }
 }
@@ -391,6 +429,10 @@ margin-left: 8px;
     font-weight: 500;
     line-height: 115%;
     margin-bottom: 32px;
+    @media screen and (min-width:1200px) {
+        max-width: 250px;
+        font-size: 48px;
+     }
 }
 .oFirmie-text {
     color: var(--grey);
@@ -425,20 +467,12 @@ margin-left: 8px;
 /* Implementation section */
 
 .gallery-section {
-    padding-top: 300px;
+    padding-top: 60px;
     background-color:#DCC1AB;
-    @media screen and (min-width:400px) {
-        padding-top: 184px;
-    }
-    @media screen and (min-width:576px) {
-        padding-top: 290px;
-    }
-
-    @media screen and (min-width:768px){
-        padding-top: 460px;
-    }
+    text-align: start;
     @media screen and (min-width:1200px) {
         padding-top: 120px;
+        text-align: start;
     }
 }
 
@@ -451,6 +485,7 @@ margin-left: 8px;
     margin-bottom: 48px;
     @media screen and (min-width:1200px) {
         margin-bottom: 96px;
+        font-size: 48px;
     }
 }
 .gallery {
@@ -465,6 +500,7 @@ margin-left: 8px;
     background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
     position: absolute;
     bottom: 0px;
+    left: 0;
     width: 100%;
     height: 50%;
 }
@@ -526,10 +562,13 @@ margin-left: 8px;
     @media screen and (min-width:768px){
         height: 760px;
     }
+    @media screen and (min-width:1200px){
+        height: 1153px;
+    }
 }
 
 .gallery-container.isOpen {
-    height:100%
+    height: fit-content;
 }
 
 /* instagram section */
@@ -545,12 +584,17 @@ margin-left: 8px;
 .instagram-container {
     max-width: 1040px;
     height: 100%;
-    padding: 60px 15px 60px 15px;
+    padding: 60px 30px 60px 30px;
+    
     background-color: var(--green);
     color: var(--grey);
     display: flex;
     flex-direction: column;
     align-items: normal;
+    @media screen and (min-width:768px) {
+        padding: 60px 15px 60px 15px;
+        min-width: 700px;
+     }
     @media screen and (min-width:1200px) {
         padding: 0 97px 0 97px;
         height: 358px;
@@ -562,7 +606,8 @@ margin-left: 8px;
 .instagram-header {
     width: 100%;
     font-family: 'Montserrat';
-    font-size: 36px;
+    font-size: 26px;
+    
     font-weight: 400;
     line-height: 120%;
     text-align: center;
@@ -570,6 +615,9 @@ margin-left: 8px;
     margin-right: 0;
     margin-bottom: 16px;
     color: var(--grey);
+    @media screen and (min-width:768px) {
+        font-size: 36px;
+     }
 
     @media screen and (min-width:1200px) {
         font-size: 40px;
@@ -676,7 +724,7 @@ margin-left: 8px;
 }
 
 .footer-adRespect>svg {
-    margin-left: 16px;
+    margin-left: 6px;
 }
 
 /* drop menu */
