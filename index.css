@@ -384,7 +384,7 @@ margin-left: 8px;
 
 /* o firmie section */
 
-.oFirmie-hook {
+.aboutUs-hook {
     color: var(--grey);
     font-size: 12px;
     letter-spacing: -0.12px;
@@ -392,7 +392,7 @@ margin-left: 8px;
 }
 
 
-.oFirmie-thumb {
+.aboutUs-thumb {
     text-align: start;
     @media screen and (min-width:768px) {
         text-align: center;
@@ -402,11 +402,11 @@ margin-left: 8px;
      }
 }
 
-.oFirmie-row{
+.aboutUs-row{
     height: 100%;
 }
 
-.oFirmie-info {
+.aboutUs-info {
     padding: 60px 15px 80px 15px;
     display: flex;
     flex-direction: column;
@@ -422,7 +422,7 @@ margin-left: 8px;
      }
 }
 
-.oFirmie-header {
+.aboutUs-header {
     color: var(--grey);
     font-family: 'Montserrat';
     font-size: 36px;
@@ -434,12 +434,12 @@ margin-left: 8px;
         font-size: 48px;
      }
 }
-.oFirmie-text {
+.aboutUs-text {
     color: var(--grey);
     margin-bottom: 72px;
 }
 
-.oFirmie-btn {
+.aboutUs-btn {
     height: 50px;
     padding: 0 18px 0 22px;
     display: flex;
@@ -451,15 +451,15 @@ margin-left: 8px;
     color: var(--grey);
 }
 
-.oFirmie-btn:hover {
+.aboutUs-btn:hover {
     background-color: var(--accent);
 }
 
-.oFirmie-btn:hover>svg {
+.aboutUs-btn:hover>svg {
     transform: translateX(5px);
 }
 
-.oFirmie-btn>svg{
+.aboutUs-btn>svg{
     margin-left: 8px;
     fill: var(--grey);
 }
